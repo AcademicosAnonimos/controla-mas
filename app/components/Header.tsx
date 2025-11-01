@@ -31,8 +31,8 @@ export default function Header() {
     <header className="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
       <div className="container-fluid">
         <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
+          href="/dashboard"
+          
           className="navbar-brand fw-bold text-primary d-flex align-items-center"
         >
           <i className="fas fa-chart-line me-2"></i>

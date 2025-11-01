@@ -7,6 +7,20 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Sistema de Finanzas Personales',
   description: 'Controla y gestiona tus finanzas personales de manera eficiente',
+  icons: {
+    icon: [
+      {
+        url: 'https://i.postimg.cc/2LfJtMGY/mas-solo.png',
+        type: 'image/png',
+      },
+    ],
+    apple: [
+      {
+        url: 'https://i.postimg.cc/2LfJtMGY/mas-solo.png',
+        type: 'image/png',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -27,7 +41,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} d-flex flex-column min-vh-100`}>
-        {/* El contenido crece para ocupar todo el espacio restante */}
         <main className="flex-grow-1">
           {children}
         </main>

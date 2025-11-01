@@ -133,7 +133,7 @@ export default function Footer() {
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <p className="mb-0">
-              &copy; {currentYear} Sistema de Finanzas Personales. Todos los derechos reservados.
+              &copy; {currentYear} Controla Más. Todos los derechos reservados.
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end">
