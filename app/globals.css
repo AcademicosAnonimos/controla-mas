@@ -1,0 +1,189 @@
+﻿@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --blue: #0214b6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Asegurar que el body ocupe toda la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el scroll suave en FAQ */
+.faq-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.faq-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.faq-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.faq-scroll::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.faq-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Asegurar que el contenido principal crezca correctamente */
+.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.sidebar {
+  background: linear-gradient(135deg, #296a88 0%, #1e4072 100%);
+  min-height: 100vh;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  border: none;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  border: none;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+}
+
+
+/* Estilos personalizados para el footer y páginas nuevas */
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.2);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+/* ---------------- Estilos específicos para la página de contacto ---------------- */
+
+.contact-column {
+  min-height: 500px;
+}
+
+.faq-section {
+  max-height: 250px;
+}
+
+.faq-content {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+/* Scrollbar personalizado */
+.faq-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.faq-content::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 2px;
+}
+
+.faq-content::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 2px;
+}
+
+.faq-content::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+/* Asegurar que las columnas se alineen correctamente */
+.align-items-start {
+  align-items: stretch !important;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
